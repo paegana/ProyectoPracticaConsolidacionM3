@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* Archivo: /assets/scss/styles.scss */
+/* Importar variables personalizadas */
+/* Archivo: /assets/scss/_variables.scss */
+/* Cambiar el color primario de Bootstrap */
+/* Cambiar la fuente predeterminada */
+/* Fondo predeterminado */
+/* Importar Bootstrap */
+/* Estilos personalizados del chat */
+.chat-container {
+  background: url("./fondoChat.jpeg") repeat;
+  background-size: auto;
+  padding: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: none;
+}
+
+.unread .font-weight-bold {
+  font-weight: bold;
+}
+
+.chat-messages {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 75%;
+  margin-bottom: 10px;
+}
+
+.sender {
+  align-self: flex-start;
+  background-color: #007bff;
+  color: white;
+}
+
+.receiver {
+  align-self: flex-end;
+  background-color: #e9ecef;
+}
+
+@media (min-width: 768px) {
+  .chat-container .col-md-4 {
+    display: block !important;
+  }
+}
+.navbar-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  /* Animación de rotación al hacer hover */
+  transition: transform 0.3s ease;
+}
+.navbar-icon:hover {
+  transform: rotate(360deg); /* Rotación en 360 grados */
+}
+
+/*# sourceMappingURL=estilos.css.map */
